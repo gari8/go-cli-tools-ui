@@ -1,10 +1,14 @@
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
-const colors = {
-  brand: {},
-};
-
-const theme = extendTheme({ colors });
+const theme = extendTheme({
+  colors: {
+    brand: {
+      primary: "#00ACD7",
+      main: "#2DBCAF",
+      secondary: "#E5E5E5",
+    },
+  },
+});
 
 function MyApp({ Component, pageProps }) {
   return (
