@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "lint-staged",
     "test": "yarn jest",
+    "test:watch": "yarn jest --watch",
     "prepare": "husky install"
   },
   "lint-staged": {

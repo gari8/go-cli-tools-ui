@@ -21,5 +21,10 @@
     "eslint-config-prettier",
     "prettier"
   ],
-  "ignorePatterns": ["jest.config.ts"]
+  "ignorePatterns": ["jest.config.ts"],
+  "rules": {
+    "react/no-children-prop": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["error"]
+  }
 }

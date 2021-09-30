@@ -19,6 +19,9 @@ export default async (): Promise<Config.InitialOptions> => {
     moduleNameMapper: {
       "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
       "^@/components/(.*)$": "<rootDir>/components/$1",
+      "^@/pages/(.*)$": "<rootDir>/pages/$1",
+      "^@/types/(.*)$": "<rootDir>/types/$1",
+      "^@/stores/(.*)$": "<rootDir>/stores/$1",
     },
     testPathIgnorePatterns: ["<rootDir>/node_modules/", "<rootDir>/.next/"],
     transform: {
@@ -29,6 +32,6 @@ export default async (): Promise<Config.InitialOptions> => {
       "^.+\\.module\\.(css|sass|scss)$",
       "^.+\\.setup\\.ts$",
     ],
-    setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
+    setupFilesAfterEnv: ["<rootDir>/jest.setup.tsx"],
   };
 };

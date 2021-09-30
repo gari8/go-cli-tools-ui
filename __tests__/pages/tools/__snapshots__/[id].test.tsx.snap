@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`show is components 1`] = `
+exports[`Show is components 1`] = `
 <DocumentFragment>
   <div
     class="css-1mwr1vy"
