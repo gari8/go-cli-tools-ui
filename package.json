@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "lint-staged",
-    "test": "yarn jest",
+    "test": "yarn jest -u",
     "test:watch": "yarn jest --watch",
     "prepare": "husky install"
   },
