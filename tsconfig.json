@@ -40,7 +40,8 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "jsx": "preserve",
-    "isolatedModules": false
+    "isolatedModules": true,
+    "strict": false
   },
   "include": [
     "next-env.d.ts",

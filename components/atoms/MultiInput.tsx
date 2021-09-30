@@ -23,7 +23,7 @@ export default function MultiInput({
 
   const onCreate = (e) => {
     if (e.key === "Enter") {
-      list.push(isFormat ? toKebabCase(tag) : tag);
+      list.push(isFormat ? toKebabCase(tag.trim()) : tag);
       setList(Array.from(new Set(list)));
       setTag("");
     }

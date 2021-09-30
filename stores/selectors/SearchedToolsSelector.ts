@@ -9,7 +9,8 @@ export const searchedToolsSelector = selector<Tool[]>({
   get: ({ get }) => {
     const tools: Tool[] = get(toolsState);
     const searchCondition: SearchCondition = get(searchConditionState);
-    return searchCondition.searchWords
+    return searchCondition.searchWords &&
+      searchCondition.searchWords.length !== 0
       ? tools.filter((tool: Tool) => {
           return searchCondition.searchWords.some((word) =>
             tool.title.includes(word)
