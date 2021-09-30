@@ -1,22 +1,25 @@
 {
   "compilerOptions": {
-    "baseUrl": "src",
+    "baseUrl": ".",
     "jsxImportSource": "@emotion/react",
     "paths": {
-      "~/components/*": [
+      "@/components/*": [
         "components/*"
       ],
-      "~/pages/*": [
+      "@/pages/*": [
         "pages/*"
       ],
-      "~/types/*": [
+      "@/types/*": [
         "types/*"
       ],
-      "~/styles/*": [
+      "@/styles/*": [
         "styles/*"
       ],
-      "~/public/*": [
+      "@/public/*": [
         "../public/*"
+      ],
+      "@/test/*": [
+        "test/*"
       ]
     },
     "target": "es5",
@@ -34,8 +37,8 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "isolatedModules": true
   },
   "include": [
     "next-env.d.ts",
