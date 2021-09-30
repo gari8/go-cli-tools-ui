@@ -9,10 +9,12 @@ export const searchedToolsSelector = selector<Tool[]>({
   get: ({ get }) => {
     const tools: Tool[] = get(toolsState);
     const searchCondition: SearchCondition = get(searchConditionState);
-    return searchCondition.searchText !== ""
-      ? tools.filter((tool: Tool) =>
-          tool.title.includes(searchCondition.searchText)
-        )
+    return searchCondition.searchWords
+      ? tools.filter((tool: Tool) => {
+          return searchCondition.searchWords.some((word) =>
+            tool.title.includes(word)
+          );
+        })
       : tools;
   },
 });

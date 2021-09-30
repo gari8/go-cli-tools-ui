@@ -17,7 +17,7 @@ export default function SearchInput() {
   const onChange = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {
       setSearchCondition({
-        searchText: event.target.value,
+        searchWords: event.target.value.split(" "),
       });
     },
     [setSearchCondition]

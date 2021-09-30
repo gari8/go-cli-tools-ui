@@ -1,5 +1,5 @@
 export default interface SearchCondition {
-  searchText: string;
+  searchWords: string[];
   author?: string;
   updatedAt?: Date;
   startedAt?: Date;
