@@ -13,7 +13,11 @@
       "jsx": true
     }
   },
-  "plugins": ["react", "@typescript-eslint", "jest"],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "jest"
+  ],
   "extends": [
     "next/core-web-vitals",
     "next",
@@ -21,10 +25,15 @@
     "eslint-config-prettier",
     "prettier"
   ],
-  "ignorePatterns": ["jest.config.ts"],
+  "ignorePatterns": [
+    "jest.config.ts"
+  ],
   "rules": {
     "react/no-children-prop": "off",
+    "react-hooks/exhaustive-deps": "off",
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": ["error"]
+    "@typescript-eslint/no-unused-vars": [
+      "error"
+    ]
   }
 }

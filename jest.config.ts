@@ -17,7 +17,7 @@ export default async (): Promise<Config.InitialOptions> => {
       "!**/node_modules/**",
     ],
     moduleNameMapper: {
-      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
+      "\\.(css|sass|scss)$": "<rootDir>/__mocks__/styleMock.js",
       "^@/components/(.*)$": "<rootDir>/components/$1",
       "^@/pages/(.*)$": "<rootDir>/pages/$1",
       "^@/types/(.*)$": "<rootDir>/types/$1",
